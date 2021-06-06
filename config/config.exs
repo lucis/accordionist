@@ -29,7 +29,8 @@ config :phoenix, :json_library, Jason
 # Configures Pow Auth Library
 config :accordionist, :pow,
   user: Accordionist.Users.User,
-  repo: Accordionist.Repo
+  repo: Accordionist.Repo,
+  web_module: AccordionistWeb
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
