@@ -44,6 +44,7 @@ defmodule AccordionistWeb.Router do
     pipe_through [:browser, :protected]
 
     get "/", PageController, :index
+    resources "/lessons", LessonController
   end
 
   # Other scopes may use custom stacks.
